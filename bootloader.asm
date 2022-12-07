@@ -8,7 +8,7 @@ _start:
 buffer_loop:                                ; 25 is the buffer height, 80 is the buffer width, using 2000 because its the sum of multiplying them
     mov byte[eax + ecx], 0x00               ; clear buffer
     inc ecx                                 ; increment ecx by 1
-    cmp ecx, 2000                           ; compare if its at limit (2000)
+    cmp ecx, 2000                           ; compare 
     jl buffer_loop                          ; continues loop if its less than 2000 
 
     mov byte[eax], 0x48                     ; start to write Hello, first character is "H" 
