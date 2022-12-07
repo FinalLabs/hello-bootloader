@@ -1,8 +1,11 @@
-# Hello bootloader
+# Hello Bootloader
 Bootloader that just prints "Hello"
 
-### To assemble
+### To Assemble
 `nasm -f bin bootloader.asm -o bootloader.bin`
 
-### To run
+### To Run
 `qemu-system-x86_64 bootloader.bin`
+
+### End Result
+![Screenshot](image.png)
